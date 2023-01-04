@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joris\\consoleApp\\consoleApp.csproj": {}
+    "C:\\Users\\joris\\Desktop\\TP2_CSharp\\TP2_CSharp\\consoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joris\\consoleApp\\consoleApp.csproj": {
+    "C:\\Users\\joris\\Desktop\\TP2_CSharp\\TP2_CSharp\\consoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joris\\consoleApp\\consoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\joris\\Desktop\\TP2_CSharp\\TP2_CSharp\\consoleApp.csproj",
         "projectName": "consoleApp",
-        "projectPath": "C:\\Users\\joris\\consoleApp\\consoleApp.csproj",
+        "projectPath": "C:\\Users\\joris\\Desktop\\TP2_CSharp\\TP2_CSharp\\consoleApp.csproj",
         "packagesPath": "C:\\Users\\joris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joris\\consoleApp\\obj\\",
+        "outputPath": "C:\\Users\\joris\\Desktop\\TP2_CSharp\\TP2_CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joris\\AppData\\Roaming\\NuGet\\NuGet.Config"
