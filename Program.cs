@@ -3,30 +3,28 @@ using System;
 
 namespace Puissance4
 {
-    class Calculatrice
-    {
-        // une fonction qui prend deux entiers en paramètres
-        // et qui retourne le produit de ces deux entiers
-       public int Multiplier (int a, int b) {
-            return a * b;
+    class Rectangle {
+        float largeur;
+        float Hauteur;
+        public float Aire(float largeur, float Hauteur){
+            return largeur * Hauteur;
         }
-       public int Additionner (int a, int b) {
-            return a + b;
+        public float Perimetre(float largeur, float Hauteur){
+            return largeur * 2 + Hauteur * 2;
         }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            // creer une instance de calculatrice
-            Calculatrice casio = new Calculatrice();
-            // stocker le resultat d'une multiplication dans une variable
-            int produit = casio.Multiplier(5, 7);
-            // afficher ce resultat en console 
-            WriteLine(produit);
-            
-            int somme = casio.Additionner(5, 7);
-            WriteLine(somme);
+            Rectangle rectangle = new Rectangle();
+
+            float aire = rectangle.Aire(7,5);
+            WriteLine(aire);
+
+            float perimetre = rectangle.Perimetre(7,5);
+            WriteLine(perimetre);
         }
     }
 
