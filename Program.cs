@@ -1,17 +1,22 @@
-﻿using System;
-using static System.Console;
+﻿using static System.Console;
 
 namespace Puissance4
 {
-    class JeuPuissance4
+    class Etudiant
     {
+        public string nom = "Dupont";
+        public string prenom = "Jean";
+        public int age = 20;
+        public string Saluer()
+        {
+        return $"Bonjour, je m'appelle {nom} {prenom} et j'ai {age} ans.";
+        }
+
         static void Main(string[] args)
         {
-            string marque = "Tesla";
-            string modele = "Model 3";
-            int nbPortes = 5;
-            string couleur = "Noir";
-            WriteLine($"La voiture est une {marque} modèle {modele} avec {nbPortes} portes de couleur {couleur}.");
+            Etudiant etudiant = new Etudiant();
+            string salutation = etudiant.Saluer();
+            WriteLine(salutation);
         }
     }
 }
