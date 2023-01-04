@@ -1,22 +1,38 @@
 ﻿using static System.Console;
+using System;
 
 namespace Puissance4
 {
-    class Etudiant
+    class CompteBancaire
     {
-        public string nom = "Dupont";
-        public string prenom = "Jean";
-        public int age = 20;
-        public string Saluer()
+        public string nomTitulaire = "SALVADOR";
+        public float solde = 0;
+        public void Deposer(float montant)
         {
-        return $"Bonjour, je m'appelle {nom} {prenom} et j'ai {age} ans.";
+            solde += montant;
         }
-
+        public void Retirer(float montant)
+        {
+            if (montant > solde)
+            {
+                WriteLine ("Le solde est insuffisant");
+            }
+            else
+            {
+                solde -= montant;
+            }
+        }
         static void Main(string[] args)
         {
-            Etudiant etudiant = new Etudiant();
-            string salutation = etudiant.Saluer();
-            WriteLine(salutation);
+            CompteBancaire monCompte = new CompteBancaire();
+            WriteLine("Nom du titulaire du compte : " + monCompte.nomTitulaire);
+            WriteLine("Solde du compte : " + monCompte.solde);
+            WriteLine("Combien voulez-vous déposer ?");
+            monCompte.Deposer(Convert.ToInt32(ReadLine()));
+            WriteLine("Nouveau solde après dépôt : " + monCompte.solde);
+            WriteLine("Combien voulez-vous retirer ?");
+            monCompte.Retirer(Convert.ToInt32(ReadLine()));
+            WriteLine("Nouveau solde après retrait : " + monCompte.solde);
         }
     }
 }
